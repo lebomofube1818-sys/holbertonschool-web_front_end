@@ -1,0 +1,18 @@
+/* 4-style.css - Variables for storing certain font types */
+
+/* Root element custom properties */
+:root {
+  --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Body font-family */
+body {
+  font-family: var(--font-family-base);
+}
+
+/* Heading tags font-family */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-title);
+}
+
