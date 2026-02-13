@@ -8,7 +8,7 @@
   display: block;
 }
 
-[data-section-theme="dark"] .social-link svg {
+[data-section-theme="dark"] .social-link > svg {
   fill: var(--text-color);
 }
 
