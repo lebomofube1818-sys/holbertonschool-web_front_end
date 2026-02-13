@@ -43,20 +43,23 @@ body {
   color: var(--text-color);
 }
 
-/* ✅ Corrected anchor pseudo-classes */
+/* Only target anchor elements that have an href attribute */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
+/* Visited state */
 a[href]:visited {
   font-style: italic;
 }
 
+/* Hover state */
 a[href]:hover {
   text-decoration: underline;
 }
 
+/* Active state */
 a[href]:active {
   background-color: var(--color-light-grey);
 }
