@@ -43,6 +43,7 @@ body {
   color: var(--text-color);
 }
 
+/* ✅ Corrected anchor pseudo-classes */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
