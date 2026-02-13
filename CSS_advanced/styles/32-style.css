@@ -1,0 +1,51 @@
+/* Task 32: Incorporating transitions */
+
+/* Custom properties */
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* ========================= */
+/* Transformations on card-work */
+/* ========================= */
+
+/* Scale image when card-work is hover */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+}
+
+/* Shrink card-outer when card-work is hover */
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+/* ========================= */
+/* Navigation animation */
+/* ========================= */
+
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* ========================= */
+/* Button hover transition */
+/* ========================= */
+
+.button:hover {
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+/* ========================= */
+/* Card work transitions */
+/* ========================= */
+
+.card-work:hover .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
