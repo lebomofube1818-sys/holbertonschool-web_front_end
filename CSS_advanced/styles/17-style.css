@@ -1,0 +1,41 @@
+/* Task 17: Adding padding to sections */
+
+/* Import previous styles */
+@import url("16-style.css");
+
+/* Custom properties for padding */
+:root {
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+}
+
+/* Section padding */
+.section {
+  padding: var(--section-padding);
+}
+
+/* Section header padding */
+.section-header {
+  padding: var(--section-header-padding);
+}
+
+/* Section body padding */
+.section-body {
+  padding: var(--section-body-padding);
+}
+
+/* Section footer padding and horizontal alignment */
+.section-footer {
+  padding: var(--section-footer-padding);
+  text-align: var(--section-footer-align);
+}
+
+/* Footer padding */
+.footer {
+  padding: var(--footer-padding);
+}
+
