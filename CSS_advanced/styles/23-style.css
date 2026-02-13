@@ -1,17 +1,14 @@
 /* Task 23: Fix issues for dark theme */
 
-/* Footer address uses the text-color custom property */
-.footer-address {
+[data-section-theme="dark"] .footer-address {
   color: var(--text-color);
 }
 
-/* Social links display as block elements */
-.social-link {
+[data-section-theme="dark"] .social-link {
   display: block;
 }
 
-/* SVG children of social links inherit text-color */
-.social-link svg {
+[data-section-theme="dark"] .social-link svg {
   fill: var(--text-color);
 }
 
